@@ -1,8 +1,15 @@
+import java.nio.charset.StandardCharsets;
 import java.util.Comparator;
+import java.util.List;
 import java.util.PriorityQueue;
+import java.util.Scanner;
+
+
+import com.oracle.tools.packager.IOUtils;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.*;
+
 
 /*
 	denk@itu.dk
@@ -13,10 +20,17 @@ public class Congress {
 	
 	
 	public static void main(String[] args) {
+		for (String s: args) {
+			System.out.println(s);
+		}
 
 		//split the input into an array of strings, then parse it into State objects (except the first 2 lines)
-				
-		String[] linesOfInput = StdIn.readAll().split("\\n");                   
+		Scanner input = new Scanner(System.in);
+
+		String[] linesOfInput = StdIn.readAll().split("\\n");
+		for(String s : linesOfInput){
+			System.out.println(s);
+		}
         int numberOfStates = Integer.parseInt(linesOfInput[0]);                             
         int availableSeats = Integer.parseInt(linesOfInput[1]);     
          
