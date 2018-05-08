@@ -32,3 +32,4 @@ congresses. The other files I made up. Files called small-*-in.txt are small ins
 are meant to make your life easier. The files called huge-*-in.txt are fictional population data for planets, the largest of
 these distributes the 1 million seats in the galactic senate among 200,000 planets.
 
+Congress.java uses some of the algs4 libraries from Princeton's Algorithms I course, while CongressPQ.java does the same job without them.
